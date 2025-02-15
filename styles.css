@@ -1,7 +1,16 @@
+/* Fuente Minecraft */
+@font-face {
+    font-family: 'Minecraft';
+    src: url('fonts/Minecraft.ttf') format('truetype');
+}
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
+    font-family: 'Minecraft', sans-serif;
+    background-image: url('fondo_minecraft.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -9,19 +18,22 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     padding: 20px;
     text-align: center;
+    border-bottom: 4px solid #4CAF50; /* Borde verde estilo Minecraft */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    color: #4CAF50; /* Color verde Minecraft */
 }
 
 header p {
     margin: 10px 0 0;
     font-size: 1.2em;
+    color: #ffffff;
 }
 
 main {
@@ -36,26 +48,40 @@ main {
 }
 
 .file-card {
-    background-color: #444;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     border-radius: 10px;
     padding: 20px;
     width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.file-card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.file-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .file-card h2 {
     margin: 0 0 10px;
     font-size: 1.5em;
+    color: #4CAF50; /* Color verde Minecraft */
 }
 
 .file-card p {
     margin: 0 0 15px;
     font-size: 1em;
+    color: #ffffff;
 }
 
 .download-btn {
-    background-color: #28a745;
+    background-color: #4CAF50; /* Color verde Minecraft */
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
@@ -64,11 +90,11 @@ main {
 }
 
 .download-btn:hover {
-    background-color: #218838;
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
     padding: 10px;
     text-align: center;
     margin-top: 20px;
@@ -77,4 +103,5 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9em;
+    color: #ffffff;
 }
