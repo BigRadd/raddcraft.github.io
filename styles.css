@@ -47,14 +47,15 @@ main {
     justify-content: center;
 }
 
-.file-card {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+.file-card img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin distorsionarla */
     border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50; /* Borde verde estilo Minecraft */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
 }
 
 .file-card:hover {
